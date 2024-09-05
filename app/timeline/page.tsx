@@ -116,7 +116,15 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { Calendar, GraduationCap, Plane, Music, Camera } from "lucide-react";
+import {
+  Calendar,
+  GraduationCap,
+  Plane,
+  Music,
+  Camera,
+  Car,
+  IndianRupee,
+} from "lucide-react";
 
 // Define the type for a timeline event
 type TimelineEvent = {
@@ -128,34 +136,34 @@ type TimelineEvent = {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    date: "September 2015",
-    title: "First Day of College",
-    description: "Met Dania and shared snacks during orientation",
+    date: "September 2018",
+    title: "Beginning of BMSCE",
+    description: "Journey of a life-time!!",
     icon: Calendar,
   },
   {
-    date: "July 2017",
-    title: "Epic Mountain Road Trip",
-    description: "Sang our hearts out and got lost in the wilderness",
-    icon: Plane,
+    date: "October 2019",
+    title: "Goa Trip",
+    description: "Where it all started....",
+    icon: Car,
   },
   {
-    date: "June 2019",
-    title: "Graduation Day",
-    description: "Tossed our caps and made promises to stay in touch",
+    date: " Dec 2022",
+    title: "Graduation",
+    description: "Best Dressed Graduate. ",
     icon: GraduationCap,
   },
   {
-    date: "December 2021",
-    title: "First Job Celebration",
-    description: "Toasted to adulting at our favorite café",
-    icon: Music,
+    date: "Jun 2023",
+    title: "First Job",
+    description: "Connected to the HUB",
+    icon: IndianRupee,
   },
   {
-    date: "March 2023",
-    title: "London Acceptance News",
-    description: "Screamed with joy at Dania's dream coming true",
-    icon: Camera,
+    date: "Aug 2024",
+    title: "Sheffield Calling",
+    description: "Beginning of the end.",
+    icon: Plane,
   },
 ];
 
@@ -236,7 +244,7 @@ export default function Timeline() {
             Dania's Magical Timeline ✨
           </motion.h1>
           <Image
-            src="/unicorn.png" // Make sure to replace with your actual unicorn image
+            src="/unicorn-flat-icon.png" // Make sure to replace with your actual unicorn image
             alt="Unicorn"
             width={128}
             height={128}
@@ -314,13 +322,13 @@ export default function Timeline() {
         animate={{ y: 0 }}
         transition={{ delay: 1, type: "spring" }}
       >
-        <motion.button
+        {/* <motion.button
           className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-lg"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           Add Memory 💖
-        </motion.button>
+        </motion.button> */}
       </motion.div>
     </div>
   );

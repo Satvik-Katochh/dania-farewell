@@ -21,29 +21,19 @@ interface LetterSection {
 
 const triviaQuestions: TriviaQuestion[] = [
   {
-    question: "What's the name of our favorite café where we used to study?",
-    options: [
-      "The Cozy Corner",
-      "Brew & Books",
-      "Caffeine Dreams",
-      "Study Grounds",
-    ],
-    correctAnswer: "Brew & Books",
+    question: "What's my favourite soft drink ?",
+    options: ["Thumbs Up", "Fanta", "Coke", "Pepsi"],
+    correctAnswer: "Coke",
   },
   {
-    question: "Which movie did we watch on repeat during our last sleepover?",
-    options: [
-      "The Notebook",
-      "Mean Girls",
-      "Clueless",
-      "Bridget Jones's Diary",
-    ],
-    correctAnswer: "Mean Girls",
+    question: "What's my go-to alcohol? ",
+    options: ["Magic Moments", "KingFisher", "OldMonk", "Fireball"],
+    correctAnswer: "Fireball",
   },
   {
-    question: "What's the nickname I gave you on our first day of university?",
-    options: ["Sunshine", "Brainiac", "Giggles", "Dani-bear"],
-    correctAnswer: "Sunshine",
+    question: "What's my petname?",
+    options: ["Danu", "Gudu", "Danz", "Babli"],
+    correctAnswer: "Gudu",
   },
 ];
 
@@ -58,7 +48,7 @@ const letterSections: LetterSection[] = [
   },
   {
     id: 2,
-    title: "Birthday Wishes",
+    title: "Birthday 2025",
     content:
       "Happy Birthday, my dearest friend! It's your special day, and even though we're miles apart, I hope you feel the warmth of my wishes. May this year bring you success in your studies and joy in your new home.",
     unlockDate: "2025-04-13",
@@ -66,20 +56,20 @@ const letterSections: LetterSection[] = [
   },
   {
     id: 3,
-    title: "One Year Anniversary",
+    title: "Birthday 2026",
     content:
       "Can you believe it's been a year since you moved to London? I'm so impressed by how you've adapted and thrived in your new environment. Your strength and resilience continue to inspire me.",
-    unlockDate: "2024-06-15",
+    unlockDate: "2026-04-13",
     emoji: "🎉",
   },
-  {
-    id: 4,
-    title: "Forever Friends",
-    content:
-      "No matter where life takes us, our friendship will always be a constant. I'm grateful for every moment we've shared and excited for all the adventures yet to come. You're not just my friend, you're family.",
-    unlockDate: "2025-12-25",
-    emoji: "💖",
-  },
+  // {
+  //   id: 4,
+  //   title: "Birtday",
+  //   content:
+  //     "No matter where life takes us, our friendship will always be a constant. I'm grateful for every moment we've shared and excited for all the adventures yet to come. You're not just my friend, you're family.",
+  //   unlockDate: "2025-12-25",
+  //   emoji: "💖",
+  // },
 ];
 
 const FloatingStars = () => {

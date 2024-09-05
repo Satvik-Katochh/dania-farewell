@@ -20,91 +20,154 @@ const reviews: Review[] = [
     id: "1",
     name: "Monu",
     avatar: "/guestbook/monu.jpeg",
-    message:
-      "Dania, you're the kindest soul I've ever met. Your smile brightens everyone's day!",
-    relation: "Partner in Crime",
-    voiceNote: "/path-to-voice-note-1.mp3",
+    message: `
+      Dania, you're the kindest soul I've ever met. Your smile brightens everyone's day!
+  
+      As you head off on this amazing journey, I just wanted you to know that you are going to shine, just like you always do. While I'll miss you like crazy, I want you to know that no matter how far apart we are, I'm always right here for you, supporting you every step of the way.
+  
+      Stay safe, have the best adventures, and remember you’ve got someone back home who believes in you completely. If ever you need a reminder of how incredible you are, I’m only a call away.
+  
+      Good luck, Danz, you’ve got this ❤️
+    `,
+    relation: "The better half",
+    voiceNote: "/voice-notes/monu.mp4", // Ensure the file path and format are correct
   },
+
   {
     id: "2",
     name: "Sharmu",
     avatar: "/guestbook/pranav.jpeg",
     message:
       "From study buddy to life-long friend, Dania, you've been an inspiration. Good luck in London!",
-    relation: "Bestie",
-    voiceNote: "/path-to-voice-note-2.mp3",
+    relation: "Daaruin Master",
+    voiceNote: "/sharmu.ogg",
   },
   {
     id: "3",
     name: "Nikka",
     avatar: "/guestbook/niks.jpeg",
     message:
-      "Dania's dedication and creativity never cease to amaze me. She'll go far in her studies abroad.",
-    relation: "Bestie",
-    voiceNote: "/path-to-voice-note-3.mp3",
+      "Hi Danzzzz, I’m so so so so afsoos that you’re leaving, and life’s going to actually feel so incomplete without you here in Bangalore :( It’s definitely a super tough pill to swallow, but I’m so proud of how far you’ve come and I can’t wait to see you kill it in the UK! I’ve known you for 6 years now, we’ve literally been through it all, making such amazing memories together and embarking on wild adventures, and these moments with you are the ones that I’ve most cherished! You’re my BFFFLLL, and no one can or will ever take your place, you’ll see ;) Adieu for now bestie, cheers to an amazing future!!!",
+    relation: "House Wife",
+    voiceNote: "/voice-notes/nikka.ogg",
   },
+
   {
     id: "4",
     name: "Akii",
     avatar: "/guestbook/akii.jpeg",
     message:
       "Dania, your friendship has been a gift. I'll miss our coffee dates and long chats!",
-    relation: "Idiot",
-    voiceNote: "/path-to-voice-note-4.mp3",
+    relation: "The Yapper",
+    voiceNote: "/voice-notes/akii.ogg",
   },
   {
     id: "5",
-    name: "Michael",
-    avatar: "/placeholder.svg?height=100&width=100&text=M",
-    message:
-      "Your passion for learning is contagious, Dania. You've inspired me to pursue my own dreams!",
-    relation: "Study Group Member",
-    voiceNote: "/path-to-voice-note-5.mp3",
+    name: "Hrithik",
+    avatar: "/guestbook/hrithik.jpg",
+    message: "Don’t eat a pint of ice cream in one sitting.",
+    relation: "WoW-MoMo",
+    voiceNote: "/voice-notes/hrithik.ogg",
   },
   {
     id: "6",
-    name: "Olivia",
-    avatar: "/placeholder.svg?height=100&width=100&text=O",
-    message:
-      "Dania, your kindness and intelligence make you truly special. London is lucky to have you!",
-    relation: "Childhood Friend",
-    voiceNote: "/path-to-voice-note-6.mp3",
+    name: "Nikki",
+    avatar: "/guestbook/nikki.jpg", // Changed text to 'N' to match the name
+    message: `
+      My dearest Danzzzz❤️
+  
+      I just want you to know how incredibly special you are to me. You’ve grown into such a beautiful, kind, and strong young woman, and I am so proud of everything you’ve achieved. As you head off to Sheffield, my heart is already missing you so much, but I know that this is just the beginning of an amazing journey for you. 
+  
+      I believe in you with all my heart and have no doubt that you’re going to do incredible things. Good luck, my love, and may your future be filled with endless opportunities, happiness, and success. 
+      Never forget how deeply loved you are by your ever young, eternally glamorous aunt 😀❤️
+  
+      With all my love,  
+      Nikki ❤️❤️
+    `,
+    relation: "Maasi (Maa-Jaisi)", // Corrected spacing
+    voiceNote: "/voice-notes/voice-note-6.ogg", // Ensure the voice note path is correct and the file format is consistent
   },
+
   {
     id: "7",
-    name: "David",
-    avatar: "/placeholder.svg?height=100&width=100&text=D",
+    name: "Sahil",
+    avatar: "/guestbook/sahil.jpg",
     message:
-      "Your determination is inspiring, Dania. Can't wait to see what you achieve in London!",
-    relation: "Lab Partner",
-    voiceNote: "/path-to-voice-note-7.mp3",
+      "Hey Dania! Apart from being an absolute party starter, it is amazing to see the energy you bring in lives around you. I want this quality in me someday. You are going to kill it there. Lots of love and happiness.",
+    relation: "The Cry Baby",
+    voiceNote: "/voice-notes/sahil.ogg",
   },
   {
     id: "8",
-    name: "Sophie",
-    avatar: "/placeholder.svg?height=100&width=100&text=S",
-    message:
-      "Dania, you've been the best mentor I could ask for. Thank you for everything!",
-    relation: "Mentee",
-    voiceNote: "/path-to-voice-note-8.mp3",
+    name: "Shruti",
+    avatar: "/guestbook/shruti.jpg",
+    message: `
+      Hey Danzzzz!!!!
+  
+      We just met for like 5 or 6 times, and I can vouch that you are the most entertaining, enthusiastic, and energetic person in a room full of people. Always keep this aura of yours with you.
+  
+      All the best for your future ❤️
+    `,
+    relation: "Leader of Secondary Group",
+    voiceNote: "/voice-notes/shruti.ogg", // Make sure the path and format are correct
   },
+
   {
     id: "9",
-    name: "Dr. Williams",
-    avatar: "/placeholder.svg?height=100&width=100&text=DW",
+    name: "Sanya",
+    avatar: "/guestbook/sanya.jpg",
     message:
       "Dania's research skills are exceptional. She has a bright future in academia ahead.",
-    relation: "Research Advisor",
+    relation: "Work Wife",
     voiceNote: "/path-to-voice-note-9.mp3",
   },
   {
     id: "10",
-    name: "Raj",
-    avatar: "/placeholder.svg?height=100&width=100&text=R",
+    name: "Sera",
+    avatar: "/guestbook/sera.jpg",
     message:
-      "Dania's cultural sensitivity and global perspective will serve her well in London. Bon voyage!",
-    relation: "International Student Buddy",
-    voiceNote: "/path-to-voice-note-10.mp3",
+      "Dear Dania Didi, The first ever memory I have of you was when we wore matching pink Barbie t-shirts for an event and I felt like I was on top of the world, well firstly because I was wearing pink, cause obviously?! And also, because I got to match with you!!! You were only a baby yourself but to me you were DANIA DIDI, my bestie, my fav person, my support, everything. Even after all these years I still love and cherish you the same way I did when I was two. We've had so much fun together and get along soooooo well (except maybe for that one time when I threw your phone across the room hehe :)) And now, you're moving away from home, faaaaaaar away from me and I'm going to miss you so so so so so so much, but at the same time I'm so excited for everything that's awaiting you in the future because you deserve EACH.AND.EVERY.BIT.OF.IT. You've put in so much effort, from surviving primus to working for loooooong hours every day at your job, you've conquered everything and I trust and believe that you will only excel in life from here. I will forever support and love you unconditionally. I love you the most. XOXO (Gossip Girl Sera)",
+    relation: "Lil Sister",
+    voiceNote: "/voice-notes/sera.mp4",
+  },
+  {
+    id: "10",
+    name: "Pulkit",
+    avatar: "/guestbook/thappar.jpg",
+    message:
+      "Hey Danny boi, “Tusi jaa rahe ho? Tusi na jao” (I hope you are desi enough to get the reference). Try not to butcher Hinglish with that British accent now, and we’ll remain friends. I know I’ll never come across anyone with the kind of aura you have. I wish we had more good times to look back on together. The HSR place will always be my goated spot for drunk conversations, and you’ll forever be a part of those memories. All the very best! Don’t worry about Monu, I’ll keep his bed warm. *wink wink*",
+    relation: "The Gentleman",
+    voiceNote: "/voice-notes/thappar.mp4",
+  },
+
+  {
+    id: "11",
+    name: "Tinku",
+    avatar: "/guestbook/tinku.jpg",
+    message:
+      "Absolutely love that you were such a pleasant (and late) surprise in my life as a friend. Would definitely not have it any other way with you. Love you so incredibly much. Will miss you a lot. Please be back soon. Yours Lovingly, Tinkuu",
+    relation: "Unhinged",
+    voiceNote: "/voice-notes/tinku.ogg",
+  },
+
+  {
+    id: "12",
+    name: "Harsh",
+    avatar: "/guestbook/harsh.jpg",
+    message:
+      "Daniaaaa!! Best of luck!!!!! Honestly, Sheffield doesn’t even know what’s coming—it just got blessed with you 🤭",
+    relation: "Influenza Friend",
+    voiceNote: "/voice-notes/harsh.ogg",
+  },
+
+  {
+    id: "13",
+    name: "Simran",
+    avatar: "/guestbook/simi.jpg",
+    message:
+      "Dear Dania Didi, The first ever memory I have of you was when we wore matching pink Barbie t-shirts for an event and I felt like I was on top of the world, well firstly because I was wearing pink, cause obviously?! And also, because I got to match with you!!! You were only a baby yourself but to me you were DANIA DIDI, my bestie, my fav person, my support, everything. Even after all these years I still love and cherish you the same way I did when I was two. We've had so much fun together and get along soooooo well (except maybe for that one time when I threw your phone across the room hehe :)) And now, you're moving away from home, faaaaaaar away from me and I'm going to miss you so so so so so so much, but at the same time I'm so excited for everything that's awaiting you in the future because you deserve EACH.AND.EVERY.BIT.OF.IT. You've put in so much effort, from surviving primus to working for loooooong hours every day at your job, you've conquered everything and I trust and believe that you will only excel in life from here. I will forever support and love you unconditionally. I love you the most. XOXO (Gossip Girl Sera)",
+    relation: "The Infamous One",
+    voiceNote: "/voice-notes/simmi.ogg",
   },
 ];
 
@@ -203,13 +266,13 @@ const ReviewPopup = ({
           onClick={onClose}
           className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
         >
-          <X size={20} />
+          <X size={24} />
         </button>
         <div className="flex items-center mb-4">
           <img
             src={review.avatar}
             alt={review.name}
-            className="w-20 h-20 rounded-full border-4 border-pink-300 mr-4"
+            className="w-24 h-24 rounded-full border-4 border-pink-300 mr-4"
           />
           <div>
             <h3 className="text-2xl font-bold text-pink-600">{review.name}</h3>
@@ -275,8 +338,8 @@ export default function EnchantedVoiceBook() {
         </motion.h1>
 
         <p className="text-center text-lg text-gray-600 mb-12">
-          Click and drag the floating avatars to read messages and listen to
-          heartfelt voice notes from Dania's friends and mentors!
+          "Click and drag the floating avatars to read messages and listen to
+          heartfelt voice notes from Dania's friends and family!"
         </p>
 
         <div className="relative h-[600px] bg-gradient-to-b from-pink-50 to-purple-100 rounded-2xl overflow-hidden">

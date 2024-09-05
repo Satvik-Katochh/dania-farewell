@@ -8,38 +8,122 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const scrapbookPages = [
   {
     leftPage: {
-      photo: "/placeholder.svg?height=300&width=200",
-      note: "First day of college! Dania's smile brightened up the whole campus.",
-      date: "Sept 2015",
+      photo: "/scrapbook/1.jpg",
+      note: "Favorite Couple",
+      date: "Jun 2024",
     },
     rightPage: {
-      photo: "/placeholder.svg?height=300&width=200",
-      note: "Late night study sessions fueled by coffee and laughter.",
-      date: "Nov 2015",
+      photo: "/scrapbook/2.jpg",
+      note: "Baby Kong!!",
+      date: "April 2024",
     },
   },
   {
     leftPage: {
-      photo: "/placeholder.svg?height=300&width=200",
-      note: "Road trip to the mountains. We got lost but found the best views!",
-      date: "July 2017",
+      photo: "/scrapbook/3.jpg",
+      note: "Sharmu's Melons",
+      date: "Dec 2023",
     },
     rightPage: {
-      photo: "/placeholder.svg?height=300&width=200",
-      note: "Graduation day! Tossing caps and making promises to stay in touch.",
-      date: "June 2019",
+      photo: "/scrapbook/4.jpg",
+      note: "Gokarna!!",
+      date: "Dec 2023",
     },
   },
   {
     leftPage: {
-      photo: "/placeholder.svg?height=300&width=200",
-      note: "Celebrating our first jobs at our favorite café. Adulting begins!",
+      photo: "/scrapbook/5.jpg",
+      note: "X-mas the trio!!",
+      date: "Dec 2022",
+    },
+    rightPage: {
+      photo: "/scrapbook/6.jpg",
+      note: "X-mas the trio!!",
       date: "Dec 2021",
     },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/7.jpg",
+      note: "One With Tinku!!",
+      date: "Mar 2024",
+    },
     rightPage: {
-      photo: "/placeholder.svg?height=300&width=200",
-      note: "The day Dania got her London acceptance letter. So proud!",
-      date: "Mar 2023",
+      photo: "/scrapbook/8.jpg",
+      note: "One With the real BESTIE!!",
+      date: "July 2022",
+    },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/9.jpg",
+      note: "One with the house wife!!",
+      date: "Mar 2024",
+    },
+    rightPage: {
+      photo: "/scrapbook/10.jpg",
+      note: "One with the work wife!!",
+      date: "Apr 2024",
+    },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/11.jpg",
+      note: "X-mas..Fuck we look rich!!",
+      date: "Dec 2023",
+    },
+    rightPage: {
+      photo: "/scrapbook/12.jpg",
+      note: "Happier Than Ever",
+      date: "Sept 2022",
+    },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/13.jpg",
+      note: "Bangalore ke Gunde!!",
+      date: "Nov 2023",
+    },
+    rightPage: {
+      photo: "/scrapbook/14.jpg",
+      note: "Unicorn x Unicorn",
+      date: "Eternal",
+    },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/15.jpg",
+      note: "One with Sharmu",
+      date: "Nov 2023",
+    },
+    rightPage: {
+      photo: "/scrapbook/16.jpg",
+      note: "Oh shieeeeet, Monu ka bacha kiske kok mein hai?",
+      date: "Eternal",
+    },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/17.jpg",
+      note: "Borderline Alcoholic",
+      date: "Dec 2023",
+    },
+    rightPage: {
+      photo: "/scrapbook/18.jpg",
+      note: "Desi Santa!!",
+      date: "hohohhoho!!",
+    },
+  },
+  {
+    leftPage: {
+      photo: "/scrapbook/19.jpg",
+      note: "Look at this kiddo!!",
+      date: "^__^",
+    },
+    rightPage: {
+      photo: "/scrapbook/20.jpg",
+      note: "OOpiseee!!",
+      date: ":)",
     },
   },
 ];
