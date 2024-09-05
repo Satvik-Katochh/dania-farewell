@@ -318,7 +318,7 @@ export default function DaniaFarewell() {
             {
               icon: Gamepad,
               text: "Trivia",
-              color: "text-yellow-500",
+              color: "text-green-500",
               onClick: handleTriviaClick,
             },
 
@@ -337,7 +337,7 @@ export default function DaniaFarewell() {
             {
               icon: Clock,
               text: "Timeline",
-              color: "text-green-500",
+              color: "text-yellow-500",
               onClick: handleTimelineClick,
             },
           ].map((item, index) => (
