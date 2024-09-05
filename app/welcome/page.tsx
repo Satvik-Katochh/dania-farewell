@@ -154,7 +154,17 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Heart, Star, Clock, Book, Camera } from "lucide-react";
+import {
+  Heart,
+  Star,
+  Clock,
+  Book,
+  Camera,
+  HandHeart,
+  MessageCircleHeart,
+  HeartPulse,
+  Gamepad,
+} from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const FloatingUnicorns = () => {
@@ -218,6 +228,18 @@ export default function DaniaFarewell() {
 
   const handleTimelineClick = () => {
     router.push("/timeline");
+  };
+  const handleMemoriesClick = () => {
+    router.push("/memories");
+  };
+  const handleScrapBookClick = () => {
+    router.push("/scrapbook");
+  };
+  const handleGuestBookClick = () => {
+    router.push("/guestbook");
+  };
+  const handleTriviaClick = () => {
+    router.push("/trivia");
   };
 
   return (
@@ -287,16 +309,37 @@ export default function DaniaFarewell() {
           transition={{ delay: 0.6, duration: 0.5 }}
         >
           {[
-            { icon: Heart, text: "Memories", color: "text-pink-500" },
-            { icon: Star, text: "London Dreams", color: "text-yellow-500" },
+            {
+              icon: HeartPulse,
+              text: "Memories",
+              color: "text-red-500",
+              onClick: handleMemoriesClick,
+            },
+            {
+              icon: Gamepad,
+              text: "Trivia",
+              color: "text-yellow-500",
+              onClick: handleTriviaClick,
+            },
+
+            {
+              icon: MessageCircleHeart,
+              text: "Notes",
+              color: "text-pink-500",
+              onClick: handleGuestBookClick,
+            },
+            {
+              icon: Book,
+              text: "Scrap Book",
+              color: "text-purple-500",
+              onClick: handleScrapBookClick,
+            },
             {
               icon: Clock,
               text: "Timeline",
               color: "text-green-500",
               onClick: handleTimelineClick,
             },
-            { icon: Book, text: "Guest Book", color: "text-blue-500" },
-            { icon: Camera, text: "Photo Booth", color: "text-purple-500" },
           ].map((item, index) => (
             <motion.div
               key={index}

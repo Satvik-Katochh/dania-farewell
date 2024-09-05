@@ -11,66 +11,56 @@ import {
   Plane,
   Book,
   Star,
-  House,
-  TreePalm,
-  Angry,
-  HeartPulse,
-  History,
 } from "lucide-react";
 
 const memories = [
   {
     id: 1,
-    title: "Pyaari Behna",
-    icon: HeartPulse,
-    color: "bg-pink-600",
-    description:
-      "Ek zaroon mein meri behna hai, saari umar humein sang rehna hai 🌸",
-    image: "/memories/heartpulse.jpeg",
+    title: "First Day of College",
+    icon: Book,
+    color: "bg-pink-400",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/college-day-uWxRwvHGWxT9Ks8eRLLWVhRgQbLwxA.jpg",
   },
   {
     id: 2,
-    title: "Gokarna Trip",
-    icon: TreePalm,
-    color: "bg-green-600",
-    description:
-      "The Gokarna trip was full of adventure and laughter. I'll never forget it!",
-    image: "/memories/treepalm.jpeg",
+    title: "Birthday Celebration",
+    icon: Sparkles,
+    color: "bg-pink-500",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/birthday-Wd9Iy4Ue9Hs4Hy9Uy5Uy6Uy7Uy8Uy9.jpg",
   },
   {
     id: 3,
-    title: "OG Pic",
-    icon: History,
-    color: "bg-purple-600",
-    description:
-      "Ek zaroon mein meri behna hai, saari umar humein sang rehna hai 🌸",
-
-    image: "/memories/history.jpeg",
+    title: "Summer Road Trip",
+    icon: Plane,
+    color: "bg-pink-600",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/road-trip-Uy9Uy8Uy7Uy6Uy5Uy4Uy3Uy2Uy1Uy0.jpg",
   },
   {
     id: 4,
-    title: "B2B",
-    icon: Sparkles,
-    color: "bg-yellow-400",
-    description: "Bahuu to Beeee....",
-    image: "/memories/sparkles.jpeg",
+    title: "Music Festival",
+    icon: Music,
+    color: "bg-pink-700",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/music-festival-Uy0Uy1Uy2Uy3Uy4Uy5Uy6Uy7Uy8.jpg",
   },
   {
     id: 5,
-    title: "F*** You!!",
-    icon: Angry,
-    color: "bg-red-600",
-    description:
-      "That's what you get for not inviting me your b-day BITCH, huh serves you right.",
-    image: "/memories/angry.jpeg",
+    title: "Graduation Day",
+    icon: Camera,
+    color: "bg-pink-800",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/graduation-Uy8Uy7Uy6Uy5Uy4Uy3Uy2Uy1Uy0.jpg",
   },
   {
     id: 6,
-    title: "Roommates",
-    icon: House,
-    color: "bg-blue-600",
-    description: " Permanent Roomates.",
-    image: "/memories/home.jpeg",
+    title: "Farewell Party",
+    icon: Heart,
+    color: "bg-pink-900",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/farewell-Uy0Uy1Uy2Uy3Uy4Uy5Uy6Uy7Uy8.jpg",
   },
 ];
 
@@ -90,7 +80,7 @@ const MemoryOrb = ({ memory, onClick, index, total, isActive }) => {
       whileHover={{ scale: 1.1 }}
       animate={{
         scale: isActive ? 1.2 : 1,
-        boxShadow: isActive ? "0 0 20px 5px rgba(255,255,255,0.5)" : "none",
+        boxShadow: isActive ? "0 0 20px 5px rgba(255,182,193,0.5)" : "none",
       }}
       transition={{ type: "spring", stiffness: 260, damping: 20 }}
       onClick={() => onClick(memory)}
@@ -115,7 +105,7 @@ const Sparkle = ({ delay }) => (
     }}
     transition={{
       duration: Math.random() * 2 + 1,
-      repeat: Infinity, // Ensure repeat is set properly
+      repeat: Infinity,
       repeatType: "loop",
       delay: delay,
     }}
@@ -130,7 +120,7 @@ const SparkleField = () => (
   </div>
 );
 
-export default function EnchantedMemories() {
+export default function PinkMagicalMemories() {
   const [selectedMemory, setSelectedMemory] = useState(null);
   const [activeMemory, setActiveMemory] = useState(null);
 
@@ -147,19 +137,12 @@ export default function EnchantedMemories() {
       particleCount: 100,
       spread: 70,
       origin: { y: 0.6 },
-      colors: [
-        "#60A5FA",
-        "#F472B6",
-        "#34D399",
-        "#A78BFA",
-        "#FBBF24",
-        "#F87171",
-      ],
+      colors: ["#FFC0CB", "#FFB6C1", "#FF69B4", "#FF1493", "#DB7093"],
     });
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 text-white p-4 md:p-8 flex flex-col items-center justify-between relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 text-pink-900 p-4 md:p-8 flex flex-col items-center justify-between relative overflow-hidden">
       <SparkleField />
       <motion.h1
         className="text-4xl md:text-6xl font-extrabold text-center mb-8 relative z-10"
@@ -167,23 +150,24 @@ export default function EnchantedMemories() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Dania's Enchanted Memory Constellation ✨
+        Dania's Magical Memory Constellation ✨
       </motion.h1>
 
       <div className="relative w-[340px] h-[340px] mb-8">
         <motion.div
-          className="absolute top-1/4 left-[28%] transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-gradient-to-r from-pink-400 to-purple-500 flex items-center justify-center z-20 overflow-hidden"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 flex items-center justify-center z-20 overflow-hidden"
           initial={{ scale: 0 }}
           animate={{ scale: 1, rotate: 360 }}
           transition={{
             duration: 2,
             delay: 0.5,
-            // repeat: Infinity,
+            repeat: Infinity,
             repeatType: "reverse",
           }}
         >
           <motion.img
-            src="/memories/dania-avatar.jpeg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dania-profile-uWxRwvHGWxT9Ks8eRLLWVhRgQbLwxA.jpg"
+            alt="Dania"
             className="w-36 h-36 rounded-full object-cover"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -213,21 +197,14 @@ export default function EnchantedMemories() {
           Explore Dania's magical memories!
         </p>
         <motion.button
-          className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-lg font-bold hover:from-pink-600 hover:to-purple-700 transition-colors"
+          className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-full text-lg font-bold hover:from-pink-600 hover:to-pink-800 transition-colors"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={() =>
             confetti({
               particleCount: 300,
               spread: 180,
-              colors: [
-                "#60A5FA",
-                "#F472B6",
-                "#34D399",
-                "#A78BFA",
-                "#FBBF24",
-                "#F87171",
-              ],
+              colors: ["#FFC0CB", "#FFB6C1", "#FF69B4", "#FF1493", "#DB7093"],
             })
           }
         >
@@ -238,13 +215,13 @@ export default function EnchantedMemories() {
       <AnimatePresence>
         {selectedMemory && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-pink-900 bg-opacity-80 flex items-center justify-center z-50 p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-gradient-to-br from-gray-800 to-purple-900 text-white rounded-lg overflow-hidden w-full max-w-3xl"
+              className="bg-gradient-to-br from-pink-100 to-pink-300 text-pink-900 rounded-lg overflow-hidden w-full max-w-3xl"
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
@@ -265,9 +242,13 @@ export default function EnchantedMemories() {
                   />
                   {selectedMemory.title}
                 </h2>
-                <p className="text-xl mb-6">{selectedMemory.description}</p>
+                <p className="text-xl mb-6">
+                  Remember the magical moments we shared during{" "}
+                  {selectedMemory.title.toLowerCase()}? Those memories will
+                  always be a part of our journey together.
+                </p>
                 <button
-                  className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-lg font-bold hover:from-pink-600 hover:to-purple-700 transition-colors"
+                  className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-full text-lg font-bold hover:from-pink-600 hover:to-pink-800 transition-colors"
                   onClick={() => setSelectedMemory(null)}
                 >
                   Close
