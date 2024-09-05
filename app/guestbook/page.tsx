@@ -57,10 +57,11 @@ const reviews: Review[] = [
     name: "Akii",
     avatar: "/guestbook/akii.jpeg",
     message:
-      "Dania, your friendship has been a gift. I'll miss our coffee dates and long chats!",
+      "Hiii Dhaniyaa, you're probably one of the nicest, kindest, and most fun, demure, mindful people I've met. I'll miss the way you cuss at Sharmu in Hindi, I'll miss the way Monu is nicer to everyone when you're around, and the way you've been trying to set Sharmu up with someone for ages. But we'll meet soon—consider it a short hiatus from your cool cool friends in BLR. No matter how busy or overwhelming Sheffield gets, just know you'll have a home in all of your friends. Wherever life takes you, you'll never be far from home. Godspeed!",
     relation: "The Yapper",
     voiceNote: "/voice-notes/akii.ogg",
   },
+
   {
     id: "5",
     name: "Hrithik",
@@ -165,9 +166,9 @@ const reviews: Review[] = [
     name: "Simran",
     avatar: "/guestbook/simi.jpg",
     message:
-      "Dear Dania Didi, The first ever memory I have of you was when we wore matching pink Barbie t-shirts for an event and I felt like I was on top of the world, well firstly because I was wearing pink, cause obviously?! And also, because I got to match with you!!! You were only a baby yourself but to me you were DANIA DIDI, my bestie, my fav person, my support, everything. Even after all these years I still love and cherish you the same way I did when I was two. We've had so much fun together and get along soooooo well (except maybe for that one time when I threw your phone across the room hehe :)) And now, you're moving away from home, faaaaaaar away from me and I'm going to miss you so so so so so so much, but at the same time I'm so excited for everything that's awaiting you in the future because you deserve EACH.AND.EVERY.BIT.OF.IT. You've put in so much effort, from surviving primus to working for loooooong hours every day at your job, you've conquered everything and I trust and believe that you will only excel in life from here. I will forever support and love you unconditionally. I love you the most. XOXO (Gossip Girl Sera)",
+      "I can’t believe you’re actually off to start this new adventure abroad! Honestly, you’ve always been the kind of person who faces whatever life throws at you with a smile (and maybe a little sass). You've seen and done so much already, and now it's time to show the world what you’re made of on a bigger stage. Go live your best life out there, meet new people, make some wild memories, and don't forget that you have a big ass family here. We love you",
     relation: "The Infamous One",
-    voiceNote: "/voice-notes/simmi.ogg",
+    voiceNote: "/voice-notes/simi.ogg",
   },
 ];
 
