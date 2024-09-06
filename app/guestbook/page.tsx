@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { Play, Pause, X } from "lucide-react";
+import Image from "next/image"; // Import Image from Next.js
 import confetti from "canvas-confetti";
 import ReactConfetti from "react-confetti";
 
@@ -236,11 +237,20 @@ const FloatingAvatar = ({
       }}
     >
       <motion.div animate={controls}>
-        <img
+        {/* <img
           src={review.avatar}
           alt={review.name}
           className="w-20 h-20 rounded-full border-4 border-pink-300 shadow-lg"
-        />
+        /> */}
+        <div className="relative w-20 h-20">
+          <Image
+            src={review.avatar}
+            alt={review.name}
+            layout="fill"
+            objectFit="cover"
+            className="rounded-full border-4 border-pink-300 shadow-lg"
+          />
+        </div>
       </motion.div>
     </motion.div>
   );
