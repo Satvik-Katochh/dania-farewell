@@ -250,12 +250,12 @@ export default function EnchantedVoiceBook() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Dania's Enchanted Voice Book ✨🎙️
+          Dania&apos;s Enchanted Voice Book ✨🎙️
         </motion.h1>
 
         <p className="text-center text-lg text-gray-600 mb-12">
           Click on the floating avatars to read messages and listen to heartfelt
-          voice notes from Dania's friends and mentors!
+          voice notes from Dania&apos;s friends and mentors!
         </p>
 
         <div className="relative h-[600px] bg-gradient-to-b from-pink-50 to-purple-100 rounded-2xl overflow-hidden">
