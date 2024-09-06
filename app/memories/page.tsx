@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
+import Image from "next/image";
 import {
   Sparkles,
   Heart,
@@ -181,12 +182,20 @@ export default function EnchantedMemories() {
             repeatType: "reverse",
           }}
         >
-          <motion.img
+          {/* <motion.img
             src="/memories/dania-avatar.jpeg"
             className="w-36 h-36 rounded-full object-cover"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
+          /> */}
+          <Image
+            src="/memories/dania-avatar.jpeg"
+            alt="Dania Avatar"
+            className="w-36 h-36 rounded-full object-cover"
+            layout="responsive" // Optional: Use layout="responsive"
+            width={144} // Specify the desired width
+            height={144} // Specify the desired height
           />
         </motion.div>
 

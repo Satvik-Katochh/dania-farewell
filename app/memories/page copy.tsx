@@ -55,7 +55,7 @@ export default function MemoriesPage() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        Dania's Magical Memories 🦄✨
+        Dania&apos;s Magical Memories 🦄✨
       </motion.h1>
 
       <motion.div
