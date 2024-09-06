@@ -112,15 +112,14 @@ const reviews: Review[] = [
     relation: "Leader of Secondary Group",
     voiceNote: "/voice-notes/shruti.ogg", // Make sure the path and format are correct
   },
-
   {
     id: "9",
     name: "Sanya",
     avatar: "/guestbook/sanya.jpg",
     message:
-      "Dania's research skills are exceptional. She has a bright future in academia ahead.",
+      "Thanks for being my work wife!! You've been my go-to person for all the random rants, inside jokes, and coffee runs. From office hours to after-work hangouts, you've made every moment memorable. Can't wait to see what you'll achieve next! You’re not just my work buddy, but my real-life bestie. Love you!",
     relation: "Work Wife",
-    voiceNote: "/path-to-voice-note-9.mp3",
+    voiceNote: "",
   },
   {
     id: "10",
