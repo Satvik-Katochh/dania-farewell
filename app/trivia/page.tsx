@@ -42,10 +42,11 @@ const letterSections: LetterSection[] = [
     id: 1,
     title: "A New Beginning",
     content:
-      "Dear Dania, as you embark on this new journey, remember that every ending is just a new beginning in disguise. Your adventure in London is going to be filled with amazing experiences and growth. I'm so proud of you for taking this bold step!",
+      "We want to see you win. We want to see you absolutely smash every single dream you have. We want to see you overcome all of the barriers you face, and we want to see you succeed. We’re your biggest fans, your top supporters, and we’ll be with you every single step of the way. You’re destined for greatness.",
     unlockDate: "2023-06-15",
     emoji: "🌟",
   },
+
   {
     id: 2,
     title: "Birthday 2025",

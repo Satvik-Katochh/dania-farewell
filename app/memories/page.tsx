@@ -16,12 +16,13 @@ import {
   Angry,
   HeartPulse,
   History,
+  Earth,
 } from "lucide-react";
 
 const memories = [
   {
     id: 1,
-    title: "Pyaari Behna",
+    title: "Rakhiiiii",
     icon: HeartPulse,
     color: "bg-pink-600",
     description:
@@ -33,17 +34,15 @@ const memories = [
     title: "Gokarna Trip",
     icon: TreePalm,
     color: "bg-green-600",
-    description:
-      "The Gokarna trip was full of adventure and laughter. I'll never forget it!",
+    description: "Go go gokarna!!",
     image: "/memories/treepalm.jpeg",
   },
   {
     id: 3,
-    title: "OG Pic",
-    icon: History,
+    title: "FWB",
+    icon: Earth,
     color: "bg-purple-600",
-    description:
-      "Ek zaroon mein meri behna hai, saari umar humein sang rehna hai 🌸",
+    description: "Friends Without Benefits!!",
 
     image: "/memories/history.jpeg",
   },
@@ -66,7 +65,7 @@ const memories = [
   },
   {
     id: 6,
-    title: "Roommates",
+    title: "116 & 802",
     icon: House,
     color: "bg-blue-600",
     description: " Permanent Roomates.",
@@ -167,7 +166,7 @@ export default function EnchantedMemories() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Dania's Enchanted Memory Constellation ✨
+        Dania's Memory Constellation ✨
       </motion.h1>
 
       <div className="relative w-[340px] h-[340px] mb-8">
