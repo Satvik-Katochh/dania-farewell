@@ -86,7 +86,7 @@ const reviews: Review[] = [
       Nikki ❤️❤️
     `,
     relation: "Maasi (Maa-Jaisi)", // Corrected spacing
-    voiceNote: "/voice-notes/voice-note-6.ogg", // Ensure the voice note path is correct and the file format is consistent
+    voiceNote: "", // Ensure the voice note path is correct and the file format is consistent
   },
 
   {
