@@ -88,7 +88,7 @@
 //             transition={{ delay: 0.4, duration: 0.5 }}
 //           >
 //             Our magical friend Dania is embarking on an enchanted journey to
-//             London for higher studies! Let's sprinkle some pixie dust and create
+//             London for higher studies! Let&apos;s sprinkle some pixie dust and create
 //             unforgettable memories before she rides over the rainbow!
 //           </motion.p>
 
@@ -287,8 +287,8 @@ export default function DaniaFarewell() {
             transition={{ delay: 0.4, duration: 0.5 }}
           >
             Our magical friend Dania is embarking on an enchanted journey to
-            London for higher studies! Let's sprinkle some pixie dust and create
-            unforgettable memories before she rides over the rainbow!
+            London for higher studies! Let&apos;s sprinkle some pixie dust and
+            create unforgettable memories before she rides over the rainbow!
           </motion.p>
 
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>

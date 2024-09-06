@@ -150,7 +150,7 @@ export default function PinkMagicalMemories() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Dania's Magical Memory Constellation ✨
+        Dania&apos;s Magical Memory Constellation ✨
       </motion.h1>
 
       <div className="relative w-[340px] h-[340px] mb-8">
@@ -194,7 +194,7 @@ export default function PinkMagicalMemories() {
         transition={{ duration: 1, delay: 1.5 }}
       >
         <p className="text-xl md:text-2xl font-semibold mb-4">
-          Explore Dania's magical memories!
+          Explore Dania&apos;s magical memories!
         </p>
         <motion.button
           className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-full text-lg font-bold hover:from-pink-600 hover:to-pink-800 transition-colors"
@@ -208,7 +208,7 @@ export default function PinkMagicalMemories() {
             })
           }
         >
-          Celebrate Dania's Journey!
+          Celebrate Dania&apos;s Journey!
         </motion.button>
       </motion.div>
 

@@ -147,7 +147,7 @@ export default function MagicalMemories() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        Dania's Magical Memory Constellation ✨
+        Dania&apos;s Magical Memory Constellation ✨
       </motion.h1>
 
       <div className="relative w-[440px] h-[440px] mb-8">
@@ -191,7 +191,7 @@ export default function MagicalMemories() {
         transition={{ duration: 1, delay: 1.5 }}
       >
         <p className="text-xl md:text-2xl font-semibold mb-4">
-          Explore Dania's magical memories!
+          Explore Dania&apos;s magical memories!
         </p>
         <motion.button
           className="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-6 py-3 rounded-full text-lg font-bold hover:from-pink-600 hover:to-purple-600 transition-colors"
@@ -199,7 +199,7 @@ export default function MagicalMemories() {
           whileTap={{ scale: 0.95 }}
           onClick={() => confetti({ particleCount: 300, spread: 180 })}
         >
-          Celebrate Dania's Journey!
+          Celebrate Dania&apos;s Journey!
         </motion.button>
       </motion.div>
 

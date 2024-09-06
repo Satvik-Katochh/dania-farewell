@@ -33,7 +33,7 @@ const scrapbookPages = [
   {
     leftPage: {
       photo: "/scrapbook/5.jpg",
-      note: "Eid Mubarak :)!!",
+      note: "X-mas the trio!!",
       date: "Dec 2022",
     },
     rightPage: {
@@ -181,7 +181,7 @@ export default function NotebookScrapbook() {
         transition={{ duration: 0.8, type: "spring" }}
       >
         <h1 className="text-3xl font-bold text-white text-center mb-8 drop-shadow-lg">
-          Dania's Magical Scrapbook ✨📖
+          Dania&apos;s Magical Scrapbook ✨📖
         </h1>
 
         <div className="flex justify-center items-center">

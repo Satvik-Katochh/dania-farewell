@@ -224,7 +224,7 @@ export default function EnhancedScrapbook() {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, type: "spring", stiffness: 120 }}
         >
-          Dania's Magical Scrapbook ✨📖
+          Dania&apos;s Magical Scrapbook ✨📖
         </motion.h1>
 
         <div className="flex justify-center items-center">

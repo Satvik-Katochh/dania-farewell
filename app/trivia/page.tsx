@@ -161,7 +161,7 @@ export default function EnchantedLetters() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Dania's Magical Time Capsule 💖✨
+          Dania&apos;s Magical Time Capsule 💖✨
         </motion.h1>
 
         {!firstSectionUnlocked && (
@@ -213,7 +213,7 @@ export default function EnchantedLetters() {
 
         <div className="space-y-8 mt-8">
           <h2 className="text-3xl font-bold text-pink-500 mb-4 font-serif">
-            Dania's Enchanted Letters
+            Dania&apos;s Enchanted Letters
           </h2>
           <p className="text-xl text-gray-700">
             Scroll down to reveal your magical letters as they unlock over time!
@@ -309,7 +309,7 @@ export default function EnchantedLetters() {
               <Sparkles className="inline-block ml-2" />
             </h2>
             <p className="text-xl text-pink-500">
-              You've unlocked the first letter! Keep checking back for more
+              You&apos;ve unlocked the first letter! Keep checking back for more
               letters as time goes by.
             </p>
           </motion.div>

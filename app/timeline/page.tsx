@@ -241,7 +241,7 @@ export default function Timeline() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            Dania's Magical Timeline ✨
+            Dania&apos;s Magical Timeline ✨
           </motion.h1>
           <Image
             src="/unicorn-flat-icon.png" // Make sure to replace with your actual unicorn image
