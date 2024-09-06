@@ -39,10 +39,11 @@ const reviews: Review[] = [
     name: "Sharmu",
     avatar: "/guestbook/pranav.jpeg",
     message:
-      "From study buddy to life-long friend, Dania, you've been an inspiration. Good luck in London!",
+      "Hi Dania, I'm pretty sure we’ll be reading this together and sharing these last few moments together for a while but no matter where you go, wherever you are, if we’re all a body then you’ll be the heart of it. This is a farewell which I've always been like ki nahi she’s joking only, until you actually said that you’re going, and it’s very hard to even imagine not hearing the word sharmu every other day. ;-; Just wanted to say thanks for being a rainbow in everyone’s life and I’m sure an amazing time awaits you ahead. Baki I’ll keep this short kyuki baki toast mein include krunga 🙂. P.S Remember February, 2031.",
     relation: "Daaruin Master",
-    voiceNote: "/pranav.mp4",
+    voiceNote: "/voice-notes/pranav.mp4",
   },
+
   {
     id: "3",
     name: "Nikka",
