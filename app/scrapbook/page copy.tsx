@@ -33,7 +33,7 @@ const scrapbookPages = [
   {
     leftPage: {
       photo: "/scrapbook/5.jpg",
-      note: "X-mas the trio!!",
+      note: "Eid Mubarak :)!!",
       date: "Dec 2022",
     },
     rightPage: {
