@@ -49,7 +49,7 @@ const memories = [
     icon: HeartPulse,
     color: "bg-pink-600",
     description:
-      "Ek zaroon mein meri behna hai, saari umar humein sang rehna hai 🌸",
+      "Ek hazaroon mein meri behna hai, saari umar humein sang rehna hai 🌸",
     image: "/memories/heartpulse.jpeg",
   },
   {
