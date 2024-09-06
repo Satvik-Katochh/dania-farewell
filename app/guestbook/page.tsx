@@ -371,8 +371,8 @@ export default function EnchantedVoiceBook() {
         </motion.h1>
 
         <p className="text-center text-lg text-gray-600 mb-12">
-          "Click and drag the floating avatars to read messages and listen to
-          heartfelt voice notes from Dania&apos;s friends and family!"
+          &quot;Click and drag the floating avatars to read messages and listen
+          to heartfelt voice notes from Dania&apos;s friends and family!&quot;
         </p>
 
         <div className="relative h-[600px] bg-gradient-to-b from-pink-50 to-purple-100 rounded-2xl overflow-hidden">
