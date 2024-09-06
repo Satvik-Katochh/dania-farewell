@@ -18,7 +18,29 @@ import {
   HeartPulse,
   History,
   Earth,
+  LucideIcon,
 } from "lucide-react";
+
+interface Memory {
+  id: number;
+  title: string;
+  icon: LucideIcon;
+  color: string;
+  description: string;
+  image: string;
+}
+
+interface MemoryOrbProps {
+  memory: Memory;
+  onClick: (memory: Memory) => void;
+  index: number;
+  total: number;
+  isActive: boolean;
+}
+
+interface SparkleProps {
+  delay: number;
+}
 
 const memories = [
   {
@@ -74,7 +96,13 @@ const memories = [
   },
 ];
 
-const MemoryOrb = ({ memory, onClick, index, total, isActive }) => {
+const MemoryOrb: React.FC<MemoryOrbProps> = ({
+  memory,
+  onClick,
+  index,
+  total,
+  isActive,
+}) => {
   const angle = (index / total) * 2 * Math.PI;
   const radius = 150;
   const x = Math.cos(angle) * radius;
@@ -100,7 +128,7 @@ const MemoryOrb = ({ memory, onClick, index, total, isActive }) => {
   );
 };
 
-const Sparkle = ({ delay }) => (
+const Sparkle: React.FC<SparkleProps> = ({ delay }) => (
   <motion.div
     className="absolute rounded-full bg-white"
     style={{
@@ -131,8 +159,8 @@ const SparkleField = () => (
 );
 
 export default function EnchantedMemories() {
-  const [selectedMemory, setSelectedMemory] = useState(null);
-  const [activeMemory, setActiveMemory] = useState(null);
+  const [selectedMemory, setSelectedMemory] = useState<Memory | null>(null);
+  const [activeMemory, setActiveMemory] = useState<Memory | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -141,7 +169,7 @@ export default function EnchantedMemories() {
     return () => clearInterval(interval);
   }, []);
 
-  const handleOrbClick = (memory) => {
+  const handleOrbClick = (memory: Memory) => {
     setSelectedMemory(memory);
     confetti({
       particleCount: 100,
@@ -157,7 +185,6 @@ export default function EnchantedMemories() {
       ],
     });
   };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-pink-900 text-white p-4 md:p-8 flex flex-col items-center justify-between relative overflow-hidden">
       <SparkleField />
