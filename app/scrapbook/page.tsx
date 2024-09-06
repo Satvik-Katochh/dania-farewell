@@ -1,9 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Confetti from "react-confetti";
+import { useWindowSize } from "react-use";
 
 const scrapbookPages = [
   {
@@ -135,36 +137,66 @@ const Page = ({
   page: (typeof scrapbookPages)[0]["leftPage"];
   isLeft: boolean;
 }) => (
-  <div
+  <motion.div
     className={`w-full h-full bg-pink-50 p-4 ${
-      isLeft ? "rounded-l-lg" : "rounded-r-lg"
-    } shadow-inner flex flex-col items-center`}
+      isLeft ? "rounded-l-3xl" : "rounded-r-3xl"
+    } shadow-inner flex flex-col items-center justify-center`}
+    initial={{ opacity: 0, scale: 0.8 }}
+    animate={{ opacity: 1, scale: 1 }}
+    exit={{ opacity: 0, scale: 0.8 }}
+    transition={{ duration: 0.5 }}
   >
-    <div className="relative w-48 h-64 mb-4">
+    <motion.div
+      className="relative w-full h-4/5 mb-4"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <Image
         src={page.photo}
         alt={page.note}
         layout="fill"
         objectFit="cover"
-        className="rounded border-2 border-white shadow-md transform rotate-1"
+        className="rounded-2xl border-4 border-white shadow-lg"
       />
-    </div>
-    <p className="text-gray-700 mb-2 font-handwriting text-center">
+    </motion.div>
+    <motion.p
+      className="text-gray-700 mb-2 font-handwriting text-center text-xl"
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.2 }}
+    >
       {page.note}
-    </p>
-    <span className="text-sm text-gray-500 font-handwriting">{page.date}</span>
-  </div>
+    </motion.p>
+    <motion.span
+      className="text-sm text-gray-500 font-handwriting"
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.3 }}
+    >
+      {page.date}
+    </motion.span>
+  </motion.div>
 );
 
-export default function NotebookScrapbook() {
+export default function EnhancedScrapbook() {
   const [currentPage, setCurrentPage] = useState(0);
   const [flipping, setFlipping] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const { width, height } = useWindowSize();
+
+  useEffect(() => {
+    setShowConfetti(true);
+    const timer = setTimeout(() => setShowConfetti(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const flipPage = (direction: "next" | "prev") => {
     setFlipping(true);
     setTimeout(() => {
       if (direction === "next" && currentPage < scrapbookPages.length - 1) {
         setCurrentPage(currentPage + 1);
+        setShowConfetti(true);
+        setTimeout(() => setShowConfetti(false), 3000);
       } else if (direction === "prev" && currentPage > 0) {
         setCurrentPage(currentPage - 1);
       }
@@ -173,28 +205,41 @@ export default function NotebookScrapbook() {
   };
 
   return (
-    <div className="min-h-screen bg-pink-200 p-8 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-pink-200 to-purple-300 p-4 sm:p-8 flex items-center justify-center overflow-hidden">
+      <Confetti
+        width={width}
+        height={height}
+        recycle={false}
+        numberOfPieces={showConfetti ? 200 : 0}
+      />
       <motion.div
-        className="w-full max-w-4xl bg-pink-300 rounded-3xl shadow-xl overflow-hidden relative p-8"
+        className="w-full max-w-6xl bg-pink-300 rounded-3xl shadow-2xl overflow-hidden relative p-4 sm:p-8"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, type: "spring" }}
       >
-        <h1 className="text-3xl font-bold text-white text-center mb-8 drop-shadow-lg">
+        <motion.h1
+          className="text-3xl sm:text-4xl font-bold text-white text-center mb-8 drop-shadow-lg"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, type: "spring", stiffness: 120 }}
+        >
           Dania's Magical Scrapbook ✨📖
-        </h1>
+        </motion.h1>
 
         <div className="flex justify-center items-center">
-          <button
+          <motion.button
             onClick={() => flipPage("prev")}
             disabled={currentPage === 0}
             className="text-white disabled:text-pink-200 mr-4"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             aria-label="Previous page"
           >
-            <ChevronLeft size={24} />
-          </button>
+            <ChevronLeft size={36} />
+          </motion.button>
 
-          <div className="w-[600px] h-[400px] bg-pink-100 rounded-lg shadow-2xl relative overflow-hidden">
+          <div className="w-full max-w-4xl aspect-[3/2] bg-pink-100 rounded-3xl shadow-2xl relative overflow-hidden">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentPage}
@@ -214,24 +259,36 @@ export default function NotebookScrapbook() {
                 />
               </motion.div>
             </AnimatePresence>
-            <div className="absolute inset-y-0 left-1/2 w-[2px] bg-pink-300 shadow-lg"></div>
+            <motion.div
+              className="absolute inset-y-0 left-1/2 w-1 bg-pink-300 shadow-lg"
+              initial={{ height: 0 }}
+              animate={{ height: "100%" }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+            ></motion.div>
           </div>
 
-          <button
+          <motion.button
             onClick={() => flipPage("next")}
             disabled={currentPage === scrapbookPages.length - 1}
             className="text-white disabled:text-pink-200 ml-4"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             aria-label="Next page"
           >
-            <ChevronRight size={24} />
-          </button>
+            <ChevronRight size={36} />
+          </motion.button>
         </div>
 
-        <div className="text-center mt-4">
-          <p className="text-white">
+        <motion.div
+          className="text-center mt-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.8 }}
+        >
+          <p className="text-white text-lg">
             Page {currentPage + 1} of {scrapbookPages.length}
           </p>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
