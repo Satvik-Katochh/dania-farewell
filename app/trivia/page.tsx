@@ -4,6 +4,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Sparkles, Lock, Unlock, ArrowDown, Star, Check } from "lucide-react";
 import confetti from "canvas-confetti";
+import dynamic from "next/dynamic";
+
+const FloatingStars = dynamic(() => import("../components/FloatingStars"), {
+  ssr: false,
+});
 
 interface TriviaQuestion {
   question: string;
@@ -73,34 +78,34 @@ const letterSections: LetterSection[] = [
   // },
 ];
 
-const FloatingStars = () => {
-  return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden">
-      {[...Array(30)].map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute text-yellow-300"
-          initial={{
-            x: Math.random() * window.innerWidth,
-            y: Math.random() * window.innerHeight,
-            scale: 0,
-          }}
-          animate={{
-            y: [null, Math.random() * -100 - 50],
-            scale: [0, Math.random() * 0.5 + 0.5, 0],
-          }}
-          transition={{
-            duration: Math.random() * 5 + 5,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        >
-          <Star size={Math.random() * 8 + 4} />
-        </motion.div>
-      ))}
-    </div>
-  );
-};
+// const FloatingStars = () => {
+//   return (
+//     <div className="fixed inset-0 pointer-events-none overflow-hidden">
+//       {[...Array(30)].map((_, i) => (
+//         <motion.div
+//           key={i}
+//           className="absolute text-yellow-300"
+//           initial={{
+//             x: Math.random() * window.innerWidth,
+//             y: Math.random() * window.innerHeight,
+//             scale: 0,
+//           }}
+//           animate={{
+//             y: [null, Math.random() * -100 - 50],
+//             scale: [0, Math.random() * 0.5 + 0.5, 0],
+//           }}
+//           transition={{
+//             duration: Math.random() * 5 + 5,
+//             repeat: Infinity,
+//             repeatType: "loop",
+//           }}
+//         >
+//           <Star size={Math.random() * 8 + 4} />
+//         </motion.div>
+//       ))}
+//     </div>
+//   );
+// };
 
 export default function EnchantedLetters() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
