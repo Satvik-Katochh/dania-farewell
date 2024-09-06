@@ -185,7 +185,7 @@ const reviews: Review[] = [
     name: "Satvik",
     avatar: "/guestbook/satvik.jpeg",
     message: "You were the summer to my winter heart. 🌻",
-    relation: "Jack of all trades",
+    relation: "Sant",
     voiceNote: "",
   },
 ];
