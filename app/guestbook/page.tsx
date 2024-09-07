@@ -51,7 +51,7 @@ const reviews: Review[] = [
     message:
       "Hi Danzzzz, I’m so so so so afsoos that you’re leaving, and life’s going to actually feel so incomplete without you here in Bangalore :( It’s definitely a super tough pill to swallow, but I’m so proud of how far you’ve come and I can’t wait to see you kill it in the UK! I’ve known you for 6 years now, we’ve literally been through it all, making such amazing memories together and embarking on wild adventures, and these moments with you are the ones that I’ve most cherished! You’re my BFFFLLL, and no one can or will ever take your place, you’ll see ;) Adieu for now bestie, cheers to an amazing future!!!",
     relation: "House Wife",
-    voiceNote: "/voice-notes/nikka.ogg",
+    voiceNote: "/voice-notes/nikka.mp4",
   },
 
   {
@@ -61,7 +61,7 @@ const reviews: Review[] = [
     message:
       "Hiii Dhaniyaa, you're probably one of the nicest, kindest, and most fun, demure, mindful people I've met. I'll miss the way you cuss at Sharmu in Hindi, I'll miss the way Monu is nicer to everyone when you're around, and the way you've been trying to set Sharmu up with someone for ages. But we'll meet soon—consider it a short hiatus from your cool cool friends in BLR. No matter how busy or overwhelming Sheffield gets, just know you'll have a home in all of your friends. Wherever life takes you, you'll never be far from home. Godspeed!",
     relation: "The Yapper",
-    voiceNote: "/voice-notes/akii.ogg",
+    voiceNote: "/voice-notes/akii.mp4",
   },
 
   {
@@ -70,7 +70,7 @@ const reviews: Review[] = [
     avatar: "/guestbook/hrithik.jpg",
     message: "Don’t eat a pint of ice cream in one sitting.",
     relation: "WoW-MoMo",
-    voiceNote: "/voice-notes/hrithik.ogg",
+    voiceNote: "/voice-notes/hrithik.mp4",
   },
   {
     id: "6",
@@ -112,7 +112,7 @@ const reviews: Review[] = [
       All the best for your future ❤️
     `,
     relation: "Leader of Secondary Group",
-    voiceNote: "/voice-notes/shruti.ogg", // Make sure the path and format are correct
+    voiceNote: "/voice-notes/shruti.mp4", // Make sure the path and format are correct
   },
   // {
   //   id: "9",
@@ -149,7 +149,7 @@ const reviews: Review[] = [
     message:
       "Absolutely love that you were such a pleasant (and late) surprise in my life as a friend. Would definitely not have it any other way with you. Love you so incredibly much. Will miss you a lot. Please be back soon. Yours Lovingly, Tinkuu",
     relation: "Unhinged",
-    voiceNote: "/voice-notes/tinku.ogg",
+    voiceNote: "/voice-notes/tinku.mp4",
   },
 
   {
@@ -159,7 +159,7 @@ const reviews: Review[] = [
     message:
       "Daniaaaa!! Best of luck!!!!! Honestly, Sheffield doesn’t even know what’s coming—it just got blessed with you 🤭",
     relation: "Influenza Friend",
-    voiceNote: "/voice-notes/harsh.ogg",
+    voiceNote: "/voice-notes/harsh.mp4",
   },
 
   {
@@ -169,7 +169,7 @@ const reviews: Review[] = [
     message:
       "I can’t believe you’re actually off to start this new adventure abroad! Honestly, you’ve always been the kind of person who faces whatever life throws at you with a smile (and maybe a little sass). You've seen and done so much already, and now it's time to show the world what you’re made of on a bigger stage. Go live your best life out there, meet new people, make some wild memories, and don't forget that you have a big ass family here. We love you",
     relation: "The Infamous One",
-    voiceNote: "/voice-notes/simi.ogg",
+    voiceNote: "/voice-notes/simi.mp4",
   },
 
   {
@@ -179,7 +179,7 @@ const reviews: Review[] = [
     message:
       "Hey Dania, All the best for your time in Sheffield, hopefully you have the best time and meet lots of great people. Love you & see you soon! -Anmol",
     relation: "The SPY",
-    voiceNote: "/voice-notes/anmol.ogg",
+    voiceNote: "/voice-notes/anmol.mp4",
   },
 
   {
